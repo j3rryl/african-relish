@@ -22,8 +22,8 @@ class AfricanRecipeAdapter(private val context: Activity, private val arrayList:
 
         recipeImage.setImageResource(arrayList[position].recipe_image)
         recipeTitle.text=arrayList[position].recipe_title
-        recipeType.text=arrayList[position].recipe_type
-        recipeDifficulty.text=arrayList[position].recipe_difficulty
+        recipeType.text="Meal Type: "+arrayList[position].recipe_type
+        recipeDifficulty.text="Difficulty: "+arrayList[position].recipe_difficulty
 
 
         return view
